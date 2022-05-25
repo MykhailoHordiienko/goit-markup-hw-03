@@ -381,9 +381,7 @@ body {
   margin-top: 30px;
   margin-left: 30px;
 
-  background: var(--main-white-color);
-  border: 1px solid #eeeeee;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .filter-photo {
   padding-top: 34px;
@@ -392,6 +390,9 @@ body {
 
 .photo-text {
   padding: 20px 24px;
+  /* margin-top: -10px; */
+  background: var(--main-white-color);
+  border: 1px solid #eeeeee;
 }
 
 .link-title {
