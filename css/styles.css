@@ -390,7 +390,7 @@ body {
 
 .photo-text {
   padding: 20px 24px;
-  /* margin-top: -10px; */
+  margin-top: -10px;
   background: var(--main-white-color);
   border: 1px solid #eeeeee;
 }
@@ -413,4 +413,5 @@ body {
 
 .link-portfolio {
   text-decoration: none;
+  display: inline-block;
 }
