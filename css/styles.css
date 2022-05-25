@@ -391,9 +391,11 @@ body {
 
 .photo-text {
   padding: 20px 24px;
-  margin-top: -10px;
+  margin-top: -7px;
   background: var(--main-white-color);
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .link-title {
