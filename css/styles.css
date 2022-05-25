@@ -24,7 +24,7 @@ ul {
   padding-left: 0;
 }
 
-image {
+img {
   display: block;
   max-width: 100%;
 }
@@ -71,6 +71,7 @@ body {
 
 .logo {
   color: var(--accent-color);
+  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
   display: inline-block;
@@ -84,8 +85,9 @@ body {
 
 .logo.footer {
   display: inline-block;
-  padding-top: 60px;
+  padding-top: 0;
   padding-bottom: 0;
+  margin-right: 0;
   margin-bottom: 20px;
 }
 
@@ -112,7 +114,6 @@ body {
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav .item {
@@ -179,15 +180,18 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.hero-title {
+
+.hero {
   padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
   margin-bottom: 30px;
 }
 
 .hero-button {
   color: var(--main-white-color);
   background-color: var(--accent-color);
-  margin-bottom: 200px;
 
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -276,10 +280,14 @@ body {
   margin-left: 30px;
 }
 
+.work-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .name-title {
   color: var(--title-text-color);
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -288,7 +296,6 @@ body {
 }
 
 .work-title {
-  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -298,6 +305,8 @@ body {
 
 .footer {
   background-color: var(--secondary-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
@@ -310,13 +319,8 @@ body {
   font-style: normal;
 }
 
-.contact.mail {
-  display: inline-block;
+.mail {
   margin-bottom: 9px;
-}
-.contact.tel {
-  display: inline-block;
-  padding-bottom: 60px;
 }
 
 .footer-contact .contact {
@@ -391,7 +395,6 @@ body {
 
 .photo-text {
   padding: 20px 24px;
-  margin-top: -7px;
   background: var(--main-white-color);
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
