@@ -209,7 +209,9 @@ body {
 .aspect {
   display: flex;
 }
-
+.aspect > .item {
+  width: 270px;
+}
 .aspect .item + .item {
   margin-left: 30px;
 }
@@ -319,8 +321,12 @@ body {
   font-style: normal;
 }
 
-.mail {
+.footer-contact > .mail-tel {
   margin-bottom: 9px;
+}
+
+.footer-contact > .mail-tel:last-child {
+  margin-bottom: 0;
 }
 
 .footer-contact .contact {
@@ -340,11 +346,13 @@ body {
 
 .filter {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-buttons .item + .item {
@@ -387,10 +395,6 @@ body {
   margin-left: 30px;
 
   /* overflow: hidden; */
-}
-.filter-photo {
-  padding-top: 34px;
-  padding-bottom: 94px;
 }
 
 .photo-text {
