@@ -20,26 +20,28 @@
   <body class="body">
     <!-- Header -->
     <header class="header">
-      <div class="conteiner">
+      <div class="conteiner header-div">
         <a href="./index.html" class="logo"
           >Web<span class="logo-part">Studio</span></a
         >
         <nav>
           <ul class="site-nav list">
-            <li><a class="link" href="./index.html">Студия</a></li>
-            <li>
+            <li class="item">
+              <a class="link" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
               <a class="link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li><a class="link" href="">Контакты</a></li>
+            <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-contact list">
-          <li>
+          <li class="go-to">
             <a class="contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="go-to">
             <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -52,7 +54,7 @@
       <!-- Фильтр -->
       <section class="filter">
         <div class="conteiner">
-          <h1 hidden>Фильтр</h1>
+          <h1 class="visually-hidden">Фильтр</h1>
           <ul class="portfolio-buttons list">
             <li><button class="button" type="button">Все</button></li>
             <li><button class="button" type="button">Веб-сайты</button></li>
@@ -67,7 +69,7 @@
 
       <section class="filter-photo">
         <div class="conteiner">
-          <h2 hidden class="section-title">Портфолио</h2>
+          <h2 class="visually-hidden">Портфолио</h2>
           <ul class="list">
             <li>
               <a class="link-portfolio" href="">
@@ -177,12 +179,14 @@
         <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="footer-contact list">
           <li>
-            <a class="contact" href="mailto:info@example.com"
+            <a class="contact mail" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
           <li>
-            <a class="contact" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="contact tel" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
           </li>
         </ul>
       </div>

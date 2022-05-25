@@ -27,6 +27,22 @@ ul {
 image {
   display: block;
 }
+
+/* Прячем заголовки */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* создаем контейнер */
 .conteiner {
   width: 1200px;
@@ -69,7 +85,8 @@ body {
 .logo.footer {
   display: inline-block;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .logo-part {
@@ -88,6 +105,24 @@ body {
 
 /* Навигация сайта */
 
+.header-div {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
 
@@ -105,6 +140,15 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact .go-to + .go-to {
+  margin-left: 50px;
 }
 
 .header-contact .contact {
@@ -159,6 +203,13 @@ body {
 }
 
 /* качества компании */
+.aspect {
+  display: flex;
+}
+
+.aspect .item + .item {
+  margin-left: 30px;
+}
 .quality {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -182,6 +233,15 @@ body {
   padding-bottom: 94px;
 }
 
+.photo-about {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-about .item + .item {
+  margin-left: 30px;
+}
+
 .section-title.photo {
   color: var(--title-text-color);
 
@@ -200,8 +260,29 @@ body {
   padding-bottom: 94px;
 }
 
+.members-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.item.border-photo {
+  border: 1px;
+  background: var(--main-white-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.members-photo .item + .item {
+  margin-left: 30px;
+}
+
 .name-title {
   color: var(--title-text-color);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -209,6 +290,8 @@ body {
 }
 
 .work-title {
+  padding-bottom: 30px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
 }
@@ -221,11 +304,21 @@ body {
 
 .address {
   color: var(--main-white-color);
+  margin-bottom: 9px;
 
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
   font-style: normal;
+}
+
+.contact.mail {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+.contact.tel {
+  display: inline-block;
+  padding-bottom: 60px;
 }
 
 .footer-contact .contact {
