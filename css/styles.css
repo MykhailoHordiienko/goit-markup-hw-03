@@ -26,6 +26,7 @@ ul {
 
 image {
   display: block;
+  max-width: 100%;
 }
 
 /* Прячем заголовки */
@@ -49,7 +50,6 @@ image {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 /* Body */
 
@@ -73,7 +73,6 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
   display: inline-block;
-  outline: 1px solid blue;
 
   font-family: raleway, sans-serif;
   font-weight: 700;
@@ -182,7 +181,6 @@ body {
 .hero-title {
   padding-top: 200px;
   margin-bottom: 30px;
-  outline: 1px solid red;
 }
 
 .hero-button {
@@ -213,7 +211,6 @@ body {
 .quality {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid blue;
 }
 .section-title.top {
   margin-bottom: 10px;
@@ -340,6 +337,15 @@ body {
   padding-top: 94px;
 }
 
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-buttons .item + .item {
+  margin-left: 8px;
+}
+
 .portfolio-buttons .button {
   background-color: var(--teem-background);
   color: var(--title-text-color);
@@ -363,9 +369,29 @@ body {
 
 /* Фото портфолио */
 
+.portfolio-photo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-photo > .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+
+  background: var(--main-white-color);
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+}
 .filter-photo {
   padding-top: 34px;
   padding-bottom: 94px;
+}
+
+.photo-text {
+  padding: 20px 24px;
 }
 
 .link-title {
